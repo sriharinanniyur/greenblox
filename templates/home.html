@@ -27,10 +27,32 @@ header {
   background-size: cover;
 }
 
+.face {
+	width: 150px;
+	height: 150px;
+}
+
 .rounded {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+}
+
+.iconbox {
+    height: 100px;
+}
+.iconbox > div {
+    text-align: center;
+    width: 150px;
+    display: inline-block;
+}
+.iconbox p {
+    margin: 0;
+	color:white;
+	font-weight: bold;
+	background-color: rgba(66, 244, 146, 0.6);
+}
+
+.nowrap {
+	white-space: nowrap;
 }
 
 #who {
@@ -43,8 +65,8 @@ header {
 	background-size: cover;
 }
 
-#images {
-    white-space: nowrap;
+#contact {
+
 }
 
 </style>
@@ -72,16 +94,29 @@ header {
   <center>
     <div>
       <h2 style="color:white; background-color: rgba(66, 244, 146, 0.6);">THE GREENBLOX TEAM</h2>
-      <h3 class="w3-padding-32" style="background-color: rgba(66, 244, 146, 0.6);">
+      <h3 style="background-color: rgba(66, 244, 146, 0.6);" class="w3-padding-32">
 	  	We are a group of tech innovators based in New York City and Silicon Valley, who hope to harness
 		the power of IoT, blockchain, and AI to aid the global environmental movement.
 	  </h3>
 	</div>
-	<div id="images">
-		<img src="/static/kushan.jpeg" class="rounded">
-		<img src="/static/kavya.jpg" class="rounded">
-		<img src="/static/srihari.jpg" class="rounded">
-		<img src="/static/meigy.jpg" class="rounded">
+	<div class="nowrap iconbox">
+		<div>
+			<img src="/static/kushan.jpeg" class="rounded face">
+			<p>Kushan Singh</p>
+		</div>
+		<div>
+			<img src="/static/kavya.jpg" class="rounded face">
+			<p>Kavyashree U.B.</p>
+		</div>
+		<div>
+			<img src="/static/srihari.jpg" class="rounded face">
+			<p>Srihari Nanniyur</p>
+		</div>
+		<div>
+			<img src="/static/meigy.jpg" class="rounded face">
+			<p>Meigy Ulina</p>
+		</div>
+  	</div>
   </center>
   </div>
 </div>
