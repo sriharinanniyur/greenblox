@@ -1,2 +1,2 @@
-# greenblox
-Maintained by Kavya UB, Srihari Nanniyur, and various other great people.
+# website
+Official website of Tiger Technologies.
