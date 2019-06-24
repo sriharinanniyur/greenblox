@@ -16,15 +16,36 @@ header {
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
 
+.parallax {
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rounded {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
 #who {
 	background-image: url(/static/tech.jpg);
-	background-size: contain;
-};
+	background-size: cover;
+}
 
 #what {
 	background-image: url(/static/pollution.jpg);
 	background-size: cover;
-};
+}
+
+#images {
+    white-space: nowrap;
+}
 
 </style>
 <body>
@@ -41,12 +62,12 @@ header {
 </div>
 
 <!-- Header -->
-<header class="w3-container w3-center" style="padding:128px 16px">
+<header class="w3-container w3-center parallax" style="padding:128px 16px">
   <h1 class="w3-margin w3-jumbo" style="background-color: rgba(66, 244, 146, 0.6);">GREENBLOX</h1>
 </header>
 
 <!-- First Grid - Who We Are -->
-<div class="w3-row-padding w3-padding-64 w3-container" id="who">
+<div class="w3-row-padding w3-padding-64 w3-container parallax" id="who">
   <div class="w3-content">
   <center>
     <div>
@@ -56,12 +77,16 @@ header {
 		the power of IoT, blockchain, and AI to aid the global environmental movement.
 	  </h3>
 	</div>
+	<div id="images">
+		<img src="/static/kavya.jpg" class="rounded">
+		<img src="/static/meigy.jpg" class="rounded">
+		<img src="/static/srihari.jpg" class="rounded">
   </center>
   </div>
 </div>
 
 <!-- Second Grid - What We Do -->
-<div class="w3-row-padding w3-padding-64 w3-container" id="what" style="background-image: url(/static/pollution.jpg); background-size: cover;">
+<div class="w3-row-padding w3-padding-64 w3-container parallax" id="what">
   <div class="w3-content">
     <center>
 	<div>
