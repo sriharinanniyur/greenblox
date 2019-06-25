@@ -101,14 +101,14 @@ header {
 	background-color: rgba(66, 244, 146, 0.6);
 }
 
-#who {
+#team {
 	background-image: url(/static/tech.jpg);
 	background-size: cover;
 }
 
-#what {
+#mission {
 	background-image: url(/static/mobile/city.jpg);
-	background-size: contain;
+	background-size: cover;
 }
 
 #contact {
@@ -123,8 +123,8 @@ header {
 <div class="topnav">
   <a href="#" class="active">Home</a>
   <div id="myLinks">
-    <a href="#who">Who We Are</a>
-    <a href="#what">What We Do</a>
+    <a href="#mission">Our Mission</a>
+    <a href="#team">Our Team</a>
     <a href="#contact">Contact Us</a>
   </div>
   <a class="icon" onclick="myFunction()">
@@ -137,7 +137,25 @@ header {
   <h1 class="w3-jumbo" style="background-color: rgba(66, 244, 146, 0.6);">GREENBLOX</h1>
 </header>
 
-<!-- First Grid - Who We Are -->
+<!-- First Grid - Mission -->
+<div class="w3-row-padding w3-padding-64 w3-container" id="what">
+  <div class="w3-content">
+    <center>
+    <div>
+      <h2 style="color:white; background-color: rgba(66, 244, 146, 0.6);">THE GREENBLOX MISSION</h2>
+      <h3 style="background-color: rgba(66, 244, 146, 0.6);" class="w3-padding-32">
+        Greenblox uses IoT devices to collect real-time pollution data from Smart Cities in various countries.
+        After measuring this data against the goals these countries pledged at the Paris Climate Agreement, Greenblox
+        uses a blockchain architecture to reward the countries that best meet their stated goals with "carbon tokens." These tokens
+        can then be converted into tangible terms, such as World Bank loans and UN influence.
+      </h3>
+    </div>
+    </center>
+  </div>
+</div>
+
+
+<!-- Second Grid - Team -->
 <div class="w3-row-padding w3-padding-64 w3-container" id="who">
   <div class="w3-content">
   <center>
@@ -167,23 +185,6 @@ header {
 		</div>
   	</div>
   </center>
-  </div>
-</div>
-
-<!-- Second Grid - What We Do -->
-<div class="w3-row-padding w3-padding-64 w3-container" id="what">
-  <div class="w3-content">
-    <center>
-	<div>
-      <h2 style="color:white; background-color: rgba(66, 244, 146, 0.6);">THE GREENBLOX MISSION</h2>
-      <h3 style="background-color: rgba(66, 244, 146, 0.6);" class="w3-padding-32">
-        Greenblox uses IoT devices to collect real-time pollution data from Smart Cities in various countries.
-		After measuring this data against the goals these countries pledged at the Paris Climate Agreement, Greenblox
-		uses a blockchain architecture to reward the countries that best meet their stated goals with "carbon tokens." These tokens
-		can then be converted into tangible terms, such as World Bank loans and UN influence.
-      </h3>
-    </div>
-	</center>
   </div>
 </div>
 
