@@ -9,4 +9,4 @@ def home():
 
 @app.route("/mobile")
 def mobile():
-    return render_template("mobile.html")
+    return render_template("mobile/home.html")
