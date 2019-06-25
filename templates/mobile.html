@@ -32,6 +32,51 @@ header {
   background-size: cover;
 }
 
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
 .face {
 	width: 150px;
 	height: 150px;
@@ -56,10 +101,6 @@ header {
 	background-color: rgba(66, 244, 146, 0.6);
 }
 
-.nowrap {
-	white-space: nowrap;
-}
-
 #who {
 	background-image: url(/static/tech.jpg);
 	background-size: cover;
@@ -76,15 +117,19 @@ header {
 </style>
 <body>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-green w3-card w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
-	<a href="#who" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Who We Are</a>
-    <a href="#what" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">What We Do</a>
-	<a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact Us</a>
+<div class="topnav">
+  <a href="#" class="active">Home</a>
+  <div id="myLinks">
+    <a href="#who">Who We Are</a>
+    <a href="#what">What We Do</a>
+    <a href="#contact">Contact Us</a>
   </div>
+  <a class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
 
 <!-- Header -->
@@ -160,10 +205,13 @@ header {
 </footer>
 
 <script>
-var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-console.log(isMobile);
-if (isMobile) {
-	document.getElementsByTagName('html')[0].innerHTML = 'Due to the nature of its functionality, Greenblox does not currently support mobile viewing. If you wish to view this site, please use a laptop, Mac, or PC. Any questions or feedback can be sent to greenbloxofficial@gmail.com.';
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
 }
 </script>
 
