@@ -1,4 +1,4 @@
-heroku git:remote -a greenbloxtest
+heroku git:remote -a greenblox
 git add .
 git commit -m "update"
 git push origin master
