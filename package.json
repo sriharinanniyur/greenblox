@@ -1,0 +1,24 @@
+{
+  "name": "greenblox",
+  "version": "1.0.0",
+  "description": "Greenblox website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sriharinanniyur/greenblox.git"
+  },
+  "author": "Srihari Nanniyur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sriharinanniyur/greenblox/issues"
+  },
+  "homepage": "https://github.com/sriharinanniyur/greenblox#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.0",
+    "swig": "^1.4.2"
+  }
+}
